@@ -2,7 +2,7 @@ version: '3'
 
 services:
   api:
-    imaage: ghost001/redeye:obj-api
+    image: ghost001/redeye:obj-api
     ports:
       - "5000:5000"
     volumes:
