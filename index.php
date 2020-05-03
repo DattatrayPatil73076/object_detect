@@ -25,7 +25,7 @@ table, th, td {
    if(isset($_FILES['image'])){
       $file_tmp =$_FILES['image']['tmp_name'];
       $err = "";
-         move_uploaded_file($file_tmp,"obj-det/"."test.jpg");
+         move_uploaded_file($file_tmp,"./api/img/"."test.jpg");
          echo "<br><center>Success<br><br>";		 
 		 $api_endpoint = "http://127.0.0.1:5000/api/"; #$_ENV["API_ENDPOINT"] ?: "http://localhost:5000/api/";
 		 $json = @file_get_contents($api_endpoint ."test.jpg");
@@ -38,7 +38,7 @@ table, th, td {
 		}
 		      if ($err == "0"){
               #print_r($datas);
-			  echo "<img src=./obj-det/opimg.jpg height=360 width=240 /><br><br>";
+			  echo "<img src=./api/img/opimg.jpg height=360 width=240 /><br><br>";
 			  echo "<table border=1 width=44% > ";
 				echo "<tr>";
 					echo "<th>Object</th>";
