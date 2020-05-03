@@ -2,17 +2,6 @@ version: '3'
 
 services:
   api:
-    image: ghost001/redeye:obj-api
+    image: ghost001/redeye:obj-det
     ports:
-      - "5000:5000"
-    volumes:
-      - ./api/img:/app/img
-
-  web:
-    image: ghost001/redeye:www
-    ports:
-      - "80:80"
-    environment:
-      - API_ENDPOINT=http://api:5000/api/
-    volumes:
-      - .:/var/www/html
+      - "5000:5000":
