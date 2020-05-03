@@ -27,7 +27,7 @@ table, th, td {
       $err = "";
          move_uploaded_file($file_tmp,"./api/img/"."test.jpg");
          echo "<br><center>Success<br><br>";		 
-		 $api_endpoint = "http://127.0.0.1:5000/api/"; #$_ENV["API_ENDPOINT"] ?: "http://localhost:5000/api/";
+		 $api_endpoint = $_ENV["API_ENDPOINT"] ?: "http://localhost:5000/api/";
 		 $json = @file_get_contents($api_endpoint ."test.jpg");
 
 		if($json == false) {
