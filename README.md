@@ -6,7 +6,11 @@ if your just running python project :
 get the python folder
 Dont Forget To Download the Weight file : wget https://pjreddie.com/media/files/yolov3.weights
 
-if you want to run it in docker (its Broken for now):
+
+if you want to run it in docker :
+
 docker-compose -up -d
-it will take time because good things take time :)
+
+ :)
+
 ;;;;;;;
